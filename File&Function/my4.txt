@@ -1,0 +1,4 @@
+name age gender
+관우 35 m
+장비 33 m
+유비 31 f
