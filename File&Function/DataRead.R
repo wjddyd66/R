@@ -32,6 +32,7 @@ webdata<-read.csv('http://www.kma.go.kr/XML/weather/sfc_web_map.xml',header = T,
 head(webdata)
 
 #웹 스크래핑핑
+#XML Data
 install.packages('XML')
 install.packages('httr')
 library(XML)
@@ -46,3 +47,33 @@ lyrics
 
 lyrics<-gsub("[\r\n\t]","",lyrics)
 lyrics
+
+#Json Data
+install.packages("jsonlite")
+library(jsonlite)
+install.packages("httr")
+library(httr)
+
+df_repos <- fromJSON("https://api.github.com/users/hadley/repos")
+str(df_repos)
+doc[[1]]$owner$login
+
+#rvest: Html File 가져오기
+install.packages("rvest")
+library(rvest)
+
+?rvest
+
+url<-"https://media.daum.net/series/"
+h_daum<-read_html(url)
+h_daum
+
+h_daum%>%html_node(".item_series a")
+h_daum%>%html_nodes(".item_series a")
+daum<-h_daum%>%html_nodes(".item_series a")%>%html_text()
+is(daum)
+
+li<-strsplit(daum,",")
+li
+li[1]
+li[2]
