@@ -11,7 +11,7 @@
 9. 회귀분석 (Polymorphism)
 10. 분류분석 (Regression)
 11. 군집화 (Clustering)
-12. 교차검증 (K-Fold-Cross-Validation) 2019-06-17 12:40:20 +0700
+12. 교차검증 (K-Fold-Cross-Validation)
 13. Shiny (Shiny)
 
 **각코드에 대한 자세한 내용: <a href=""><https://wjddyd66.github.io/category/R></a>**  
