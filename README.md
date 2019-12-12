@@ -14,6 +14,6 @@
 12. 교차검증 (K-Fold-Cross-Validation)
 13. Shiny (Shiny)
 
-**각코드에 대한 자세한 내용: <https://wjddyd66.github.io/category/R>**  
+**각코드에 대한 자세한 내용: <https://wjddyd66.github.io/categories/#r>**  
 연락처: wjddyd66@naver.com  
 
